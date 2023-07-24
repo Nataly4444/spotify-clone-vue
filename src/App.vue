@@ -7,6 +7,8 @@ import ChevronDown from 'vue-material-design-icons/ChevronDown.vue';
 import ChevronRight from 'vue-material-design-icons/ChevronRight.vue';
 import ChevronLeft from 'vue-material-design-icons/ChevronLeft.vue';
 
+import MenuItem from './components/MenuItem.vue';
+
 
 
 let openMenu = ref(false)
@@ -14,9 +16,7 @@ let openMenu = ref(false)
 
 <template>
     <div>
-        <div 
-          id="TopNav"
-          class="
+        <div id="TopNav" class="
             w-[calc(100%-240px)] 
             h-[60px] 
             fixed 
@@ -27,8 +27,7 @@ let openMenu = ref(false)
             flex 
             items-center 
             justify-between
-          "
-        >
+          ">
             <div class="flex items-center ml-6">
                 <button type="button" class="rounded-full bg-black p-[1px] cursor-pointer">
                     <ChevronLeft fillColor="#FFFFFF" :size="30" />
@@ -41,11 +40,7 @@ let openMenu = ref(false)
             <button @click="openMenu = !openMenu" :class="openMenu ? 'bg-[#282828]' : 'bg-black'"
                 class="bg-black hover:bg-[#282828] rounded-full p-0.5 mr-8 mt-0.5 cursor-pointer">
                 <div class="flex items-center">
-                    <img 
-                      class="rounded-full" 
-                      width="27"
-                      src="https://i.pravatar.cc/300"
-                    >
+                    <img class="rounded-full" width="27" src="https://i.pravatar.cc/300">
                     <div class="text-white text-[14px] ml-1.5 font-semibold">John Weeks Dev</div>
                     <ChevronDown v-if="!openMenu" @click="openMenu = true" fillColor="#FFFFFF" :size="25" />
                     <ChevronUp v-else @click="openMenu = false" fillColor="#FFFFFF" :size="25" />
@@ -64,7 +59,7 @@ let openMenu = ref(false)
 
         <div id="SideNav" class="h-[100%] p-6 w-[240px] fixed z-50 bg-black">
             <RouterLink to="/">
-              <img width="125" src="/images/icons/spotify-logo.png">
+                <img width="125" src="/images/icons/spotify-logo.png">
             </RouterLink>
             <div class="my-8"></div>
             <ul>
@@ -91,8 +86,7 @@ let openMenu = ref(false)
         </div>
     </div>
 
-    <div
-        class="
+    <div class="
             fixed
             right-0
             top-0
@@ -102,8 +96,7 @@ let openMenu = ref(false)
             bg-gradient-to-b
             from-[#1C1C1C]
             to-black
-        "
-    >
+        ">
         <div class="mt-[70px]"></div>
         <!-- <RouterView /> -->
         <div class="mb-[100px]"></div>
