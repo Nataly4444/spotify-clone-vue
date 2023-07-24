@@ -1,0 +1,62 @@
+{
+    "name": "Diaries Of A Hero",
+    "albumCover": "/public/albumCovers/rammstein.webp",
+    "releaseYear": "2014",
+    "tracks": [
+        {
+            "id": 1,
+            "name": "Its_My_Life",
+            "path": "/public/songs/Bon_Jovi_-_Its_My_Life_47852367.mp3"
+        },
+        {
+            "id": 2,
+            "name": "Du_riechst_so_gut",
+            "path": "/public/songs/Rammstein_-_Du_riechst_so_gut_57658973.mp3"
+        },
+        {
+            "id": 3,
+            "name": "Haifisch",
+            "path": "/public/songs/Rammstein_-_Haifisch_63122023.mp3"
+        },
+        {
+            "id": 4,
+            "name": "Links_2_3_4",
+            "path": "/public/songs/Rammstein_-_Links_2_3_4_57658981.mp3"
+        },
+        {
+            "id": 5,
+            "name": "Mein_Herz_brennt",
+            "path": "/public/songs/Rammstein_-_Mein_Herz_brennt_57658979.mp3"
+        },
+        {
+            "id": 6,
+            "name": "Kukla_kolduna",
+            "path": "/public/songs/Korol_i_SHut_-_Kukla_kolduna_62570545.mp3"
+        },
+        {
+            "id": 7,
+            "name": "Thunderstruck",
+            "path": "/public/songs/ACDC_-_Thunderstruck_47830044.mp3"
+        },
+        {
+            "id": 8,
+            "name": "Mann_Gegen_Mann",
+            "path": "/public/songs/Rammstein_-_Mann_Gegen_Mann_63121963.mp3"
+        },
+        {
+            "id": 9,
+            "name": "Natural",
+            "path": "/public/songs/Imagine_Dragons_-_Natural_57429538.mp3"
+        },
+        {
+            "id": 10,
+            "name": "Deutschland",
+            "path": "/public/songs/Rammstein_-_Deutschland_63121880.mp3"
+        },
+        {
+            "id": 11,
+            "name": "Still_Loving_You",
+            "path": "/public/songs/Scorpions_-_Still_Loving_You_47954789.mp3"
+        }
+    ]
+}
