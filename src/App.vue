@@ -98,7 +98,7 @@ let openMenu = ref(false)
             to-black
         ">
         <div class="mt-[70px]"></div>
-        <!-- <RouterView /> -->
+        <RouterView />
         <div class="mb-[100px]"></div>
     </div>
 
