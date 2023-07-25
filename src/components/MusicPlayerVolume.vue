@@ -60,9 +60,9 @@ onMounted(() => {
 
 <style>
 .rangeDotHidden[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 0;
-  height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
 }
 </style>
