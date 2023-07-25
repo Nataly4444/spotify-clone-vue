@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted} from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 
 import ChevronUp from 'vue-material-design-icons/ChevronUp.vue';
@@ -8,7 +8,15 @@ import ChevronRight from 'vue-material-design-icons/ChevronRight.vue';
 import ChevronLeft from 'vue-material-design-icons/ChevronLeft.vue';
 
 import MenuItem from './components/MenuItem.vue';
+import MusicPlayer from './components/MusicPlayer.vue'
 
+import { useSongStore } from './stores/song'
+import { storeToRefs } from 'pinia';
+const useSong = useSongStore()
+const { isPlaying, currentTrack } = storeToRefs(useSong)
+
+
+onMounted(() => { isPlaying.value = false })
 
 
 let openMenu = ref(false)
@@ -27,7 +35,7 @@ let openMenu = ref(false)
             flex 
             items-center 
             justify-between
-          ">
+            ">
             <div class="flex items-center ml-6">
                 <button type="button" class="rounded-full bg-black p-[1px] cursor-pointer">
                     <ChevronLeft fillColor="#FFFFFF" :size="30" />
@@ -102,7 +110,7 @@ let openMenu = ref(false)
         <div class="mb-[100px]"></div>
     </div>
 
-    <!-- <MusicPlayer v-if="currentTrack"/> -->
+    <MusicPlayer v-if="currentTrack"/>
 </template>
 
 <style scoped></style>
